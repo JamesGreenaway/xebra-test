@@ -1,0 +1,37 @@
+html,
+body {
+  overscroll-behavior-y: none;
+  overflow: hidden;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+body {
+  height: 100dvh;
+  margin: 0;
+  -webkit-tap-highlight-color: transparent;
+  touch-action: none;
+  padding-bottom: env(safe-area-inset-bottom);
+  display: flex;
+  flex-flow: column;
+}
+
+header {
+  /* position: fixed; */
+  height: 5rem;
+  width: 100%;
+  background-color: black;
+}
+
+@media screen and (display-mode: standalone) {
+  header {
+    padding-top: env(safe-area-inset-top);
+    height: 6rem;
+  }
+}
+
+main {
+  padding-left: env(safe-area-inset-left);
+  padding-right: env(safe-area-inset-right);
+  flex-grow: 1;
+}

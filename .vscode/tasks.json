@@ -1,0 +1,18 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Open Max Patch",
+			"type": "shell",
+			"command": "open --background *.maxpat",
+			"presentation": {
+				"reveal": "never",
+				"panel": "shared"
+			},
+			"runOptions": {
+				"runOn": "folderOpen"
+			},
+			"problemMatcher": []
+		}
+	]
+}
